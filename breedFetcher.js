@@ -7,7 +7,7 @@ request(`https://api.thecatapi.com/v1/breeds/search?q=${Breed}`, (error, respons
   if (data[0] !== undefined) {
     console.log(data[0].description);
   } else {
-    console.log(`Cannot find any breed info, please try again.`)
+    console.log(`Cannot find any breed info, please try again.`);
   }
   return;
-})
+});
